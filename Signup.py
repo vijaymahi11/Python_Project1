@@ -27,7 +27,6 @@ app.config['MYSQL_DATABASE_DB'] = 'emp_register'
 app.config['MYSQL_DATABASE_HOST'] = 'localhost'
 mysql = MySQL(app)
 mysql.init_app(app)
-
 @app.route('/data', methods=['POST', 'GET'])
 def register():
     conn = mysql.connect()
